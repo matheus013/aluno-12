@@ -1,11 +1,11 @@
-package com.laccan.app.calculator;
+package org.ufal.laccan.app.calculator;
 
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class OperationDoubleTest {
-    double a = 10.0, b = 10.0;
+    double a = 0, b = 0;
 
     @Test
     public void sum() {

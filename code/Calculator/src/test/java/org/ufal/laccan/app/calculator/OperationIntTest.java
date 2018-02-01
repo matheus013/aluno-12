@@ -1,10 +1,11 @@
-package com.laccan.app.calculator;
+package org.ufal.laccan.app.calculator;
 
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class OperationIntTest {
+
     int a = 10, b = 10;
 
     @Test
