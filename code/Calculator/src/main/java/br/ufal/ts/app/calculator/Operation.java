@@ -1,4 +1,4 @@
-package org.ufal.laccan.app.calculator;
+package br.ufal.ts.app.calculator;
 
 public class Operation {
 

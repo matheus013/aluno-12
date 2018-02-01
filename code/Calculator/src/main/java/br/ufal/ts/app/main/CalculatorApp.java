@@ -1,4 +1,4 @@
-package org.ufal.laccan.app.main;
+package br.ufal.ts.app.main;
 
 public class CalculatorApp {
     public static void main(String[] args) {
