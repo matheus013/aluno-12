@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class OperationTest {
+public class OperationIntTest {
     int a = 10, b = 10;
 
     @Test
