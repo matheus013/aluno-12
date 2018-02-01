@@ -1,6 +1,6 @@
-package com.laccan;
+package com.laccan.app.main;
 
-public class HelloAPP {
+public class CalculatorApp {
     public static void main(String[] args) {
         System.out.println("Hello World");
     }
