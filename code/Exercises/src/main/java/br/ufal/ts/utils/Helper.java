@@ -15,7 +15,6 @@ public class Helper {
         System.out.println("]");
 
     }
-
     public static void printList(List<String> list) {
         System.out.printf("[");
         for (String str : list) {

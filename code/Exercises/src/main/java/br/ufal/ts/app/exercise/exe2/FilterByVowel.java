@@ -1,11 +1,11 @@
 package br.ufal.ts.app.exercise.exe2;
 
 import java.io.IOException;
-import java.nio.file.DirectoryStream;
+import java.nio.file.DirectoryStream.Filter;
 import java.util.Arrays;
 import java.util.List;
 
-public class FilterByVowel implements DirectoryStream.Filter {
+public class FilterByVowel implements Filter {
 
     final List<Character> vowels = Arrays.asList('a', 'e', 'i', 'o', 'u');
 

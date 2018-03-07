@@ -6,7 +6,7 @@ import br.ufal.ts.utils.Helper;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MapByFirst implements Exercise {
+public class MapByFirst {
     protected ArrayList<String> list;
 
     public MapByFirst(List<String> list) {
@@ -27,7 +27,7 @@ public class MapByFirst implements Exercise {
     }
 
     private ArrayList<String> init(int size) {
-        ArrayList<String> array = new ArrayList<>();
+        ArrayList<String> array = new ArrayList<String>();
         for (int i = 0; i < size; i++) {
             array.add("");
         }
@@ -46,9 +46,4 @@ public class MapByFirst implements Exercise {
         return this.list;
     }
 
-
-    @Override
-    public void result() {
-        Helper.printFirstLetterByList(this.list);
-    }
 }

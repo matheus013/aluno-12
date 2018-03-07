@@ -9,10 +9,10 @@ import java.util.List;
 public class FiltratedListVowel {
 
     public List<String> get(List<String> list) throws IOException {
-        FilterByVowel filter = new FilterByVowel();
-        List<String> beginningVowel = new ArrayList<>();
+        FilterByVowel filterByVowel = new FilterByVowel();
+        List<String> beginningVowel = new ArrayList<String>();
         for (String str : list) {
-            if (filter.accept(str)) {
+            if (filterByVowel.accept(str)) {
                 beginningVowel.add(str);
             }
         }
