@@ -1,0 +1,5 @@
+<root>
+    <item name='java.util.List void sort(java.util.Comparator&lt;? super E&gt;)'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>
