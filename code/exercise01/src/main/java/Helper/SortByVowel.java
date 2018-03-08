@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class SortByVowel {
-    final static List<Character> vowels = Arrays.asList('a', 'e', 'i', 'o', 'u');
+    final static List<Character> vowels = Arrays.asList('a', 'e', 'i', 'o', 'u','á','é');
 
     public List<String> get(List<String> list) {
 
