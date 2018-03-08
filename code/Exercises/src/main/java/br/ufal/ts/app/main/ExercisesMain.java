@@ -13,7 +13,8 @@ import java.util.List;
 
 public class ExercisesMain {
     public static void main(String[] args) throws IOException {
-        MapByFirst map = new MapByFirst(Arrays.asList("alpha", "bravo", "charlie", "delta", "echo", "foxtrot"));
+        List<String> listEx1 = Arrays.asList("alpha", "bravo", "charlie", "delta", "echo", "foxtrot");
+        MapByFirst map = new MapByFirst(listEx1);
         List<String> list = Arrays.asList("The", "Quick", "BROWN", "Fox", "Jumped", "Over", "The", "LAZY", "DOG");
         FiltratedListVowel filtratedListVowel = new FiltratedListVowel();
         FiltratedListPairLength filterByPairLength = new FiltratedListPairLength();
@@ -21,13 +22,13 @@ public class ExercisesMain {
         MergeStringList mergeStringList = new MergeStringList();
 
         System.out.println("Exercise 1");
-        Helper.printFirstLetterByList(map.getAll());
+        Helper.printList(map.getAll());
 
         System.out.println("Exercise 2");
-        Helper.printFirstLetterByList(filtratedListVowel.get(map.getAll()));
+        Helper.printList(filtratedListVowel.get(listEx1));
 
         System.out.println("Exercise 3");
-        Helper.printList(filterByPairLength.get(map.getAll()));
+        Helper.printList(filterByPairLength.get(listEx1));
 
         System.out.println("Exercise 5");
         Helper.printList(lowercaseList.get(list));

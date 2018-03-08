@@ -15,15 +15,9 @@ public class Helper {
         System.out.println("]");
 
     }
+
     public static void printList(List<String> list) {
-        System.out.printf("[");
-        for (String str : list) {
-            System.out.printf(str);
-            if (list.indexOf(str) != list.size() - 1) {
-                System.out.printf(",");
-            }
-        }
-        System.out.println("]");
+        list.stream().forEach(System.out::println);
 
     }
 }

@@ -1,21 +1,15 @@
 package br.ufal.ts.app.exercise.exe2;
 
-import br.ufal.ts.app.exercise.Exercise;
-
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class FiltratedListVowel {
 
-    public List<String> get(List<String> list) throws IOException {
+    public List<String> get(List<String> list) {
         FilterByVowel filterByVowel = new FilterByVowel();
-        List<String> beginningVowel = new ArrayList<String>();
-        for (String str : list) {
-            if (filterByVowel.accept(str)) {
-                beginningVowel.add(str);
-            }
-        }
+        List<String> beginningVowel = list.stream()                // convert list to stream
+                .filter(v -> filterByVowel.accept(v))     // we dont like mkyong
+                .collect(Collectors.toList());
         return beginningVowel;
     }
 

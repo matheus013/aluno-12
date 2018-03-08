@@ -7,9 +7,7 @@ public class LowercaseList {
     public List<String> get(List<String> list) {
         List<String> result = new ArrayList<>();
         ProxyLowercase proxyLowercase = new ProxyLowercase();
-        for (String str : list) {
-            result.add((String) proxyLowercase.format(str));
-        }
+        list.stream().forEach((v) -> result.add((String) proxyLowercase.format(v)));
         return result;
     }
 }
